@@ -25,16 +25,17 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/src/posts`,
-        name: 'posts'
-      }
+        name: 'posts',
+      },
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/src/images`,
-        name: 'images'
-      }
+        name: 'images',
+      },
     },
-    'gatsby-transformer-remark'
+    'gatsby-transformer-remark',
+    `gatsby-plugin-netlify`, // make sure to put last in the array
   ],
 }
